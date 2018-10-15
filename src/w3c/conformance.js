@@ -7,8 +7,8 @@ export const name = "w3c/conformance";
 
 export function run(conf) {
   const confo = document.getElementById("conformance");
-  const confoText = document.createDocumentFragment();
   if (confo) {
+    const confoText = document.createDocumentFragment();
     for (const n of confoTmpl(conf).childNodes) {
       confoText.appendChild(n);
     }
